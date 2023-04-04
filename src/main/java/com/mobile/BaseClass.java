@@ -1,6 +1,7 @@
 package com.mobile;
 
 import Pages.LoginPage;
+import Pages.Menu;
 import Utils.Utility;
 import com.beust.jcommander.Parameter;
 import io.appium.java_client.AppiumDriver;
@@ -26,6 +27,7 @@ public class BaseClass {
     public AndroidDriver driver;
     public static LoginPage loginPage;
     public static Utility util;
+    public static Menu menu;
 
 
     @BeforeTest
@@ -43,10 +45,12 @@ public class BaseClass {
 
         loginPage = new LoginPage(driver);
         util = new Utility(driver);
+        menu = new Menu(driver);
 
     }
     @AfterClass
     public void TearsDown() {
+
         driver.quit();
 
     }

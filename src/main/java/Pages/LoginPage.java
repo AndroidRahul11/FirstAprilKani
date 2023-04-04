@@ -11,8 +11,8 @@ import org.openqa.selenium.support.PageFactory;
 public class LoginPage extends BaseClass {
 
     @AndroidFindBy (xpath ="//android.widget.TextView[@text=\"SIGN IN\"]") private WebElement signinbtn;
-    @AndroidFindBy (id ="UserName") private WebElement emailbox;
-    @AndroidFindBy (id ="Password") private WebElement passwordbox;
+    @AndroidFindBy (xpath = "//android.view.View/android.widget.EditText[@resource-id=\"UserName\"]") private WebElement emailbox;
+    @AndroidFindBy (xpath ="//android.view.View/android.widget.EditText[@resource-id=\"Password\"]") private WebElement passwordbox;
     @AndroidFindBy (xpath ="//android.widget.Button[@text=\"Login →\"]") private WebElement loginBtn;
 
     AndroidDriver driver;

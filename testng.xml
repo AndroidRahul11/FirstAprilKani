@@ -4,6 +4,7 @@
     <test verbose="2" preserve-order="true" name="/Users/rahul.vyavahare/Documents/TestAppFramework/FirstAprilKani">
         <classes>
             <class name="Test.LoginTest">
+
         </class>
         </classes>
     </test>
